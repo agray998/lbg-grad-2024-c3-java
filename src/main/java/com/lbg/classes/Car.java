@@ -2,14 +2,29 @@ package com.lbg.classes;
 import java.lang.Math;
 
 public class Car {
-    public Car(CarModel model, CarMake make) {
+    public Car(CarModel model, CarMake make, CarColour colour) {
         this.model = model;
         this.make = make;
+        this.colour = colour;
+    }
+    public Car(CarModel model, CarMake make) {
+        this(model, make, CarColour.BLACK);
     }
     public Car() {
-        this.make = CarMake.UNKNOWN;
-        this.model = CarModel.UNKNOWN;
+        this(CarModel.UNKNOWN, CarMake.UNKNOWN, CarColour.BLACK);
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append(this.getColour())
+                .append(" ")
+                .append(this.getMake())
+                .append(" ")
+                .append(this.getModel())
+                .toString();
+    }
+
     private int speed;
     private CarMake make;
     private CarColour colour;

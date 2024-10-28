@@ -62,6 +62,7 @@ public class Main {
             }
         }
         System.out.printf("Red cars: %d\nBlue cars: %d\nBlack cars: %d\nYellow cars: %d\n", redCars, blueCars, blackCars, yellowCars);
+        System.out.println(bartCar);
     }
 }
 
