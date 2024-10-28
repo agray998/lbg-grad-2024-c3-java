@@ -1,7 +1,7 @@
 package com.lbg.classes;
 import java.lang.Math;
 
-public class Car {
+public class Car extends Vehicle {
     public Car(CarModel model, CarMake make, CarColour colour) {
         this.model = model;
         this.make = make;

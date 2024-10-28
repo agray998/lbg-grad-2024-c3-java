@@ -8,6 +8,10 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
+        partOne();
+    }
+
+    private static void partOne() {
         Car bartCar = new Car();
         bartCar.setColour(CarColour.RED);
         bartCar.setMake(CarMake.HONDA);
