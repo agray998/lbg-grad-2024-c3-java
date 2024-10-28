@@ -12,13 +12,13 @@ public class Main {
         bartCar.setColour(CarColour.RED);
         bartCar.setMake(CarMake.HONDA);
         bartCar.setModel(CarModel.JAZZ);
-        bartCar.accelerate(30, CarSpeedUnit.MPH);
+        bartCar.accelerate(30, SpeedUnit.MPH);
         System.out.println(bartCar.getSpeed());
-        bartCar.decelerate(10, CarSpeedUnit.MPH);
+        bartCar.decelerate(10, SpeedUnit.MPH);
         System.out.println(bartCar.getSpeed());
         Car lisaCar = new Car(CarModel.ASTRA, CarMake.VAUXHALL);
         lisaCar.setColour(CarColour.YELLOW);
-        lisaCar.accelerate(40, CarSpeedUnit.KPH);
+        lisaCar.accelerate(40, SpeedUnit.KPH);
         System.out.println(lisaCar.getSpeed());
         int numCars = 100;
         Car[] cars = new Car[numCars];

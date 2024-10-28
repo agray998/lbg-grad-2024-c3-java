@@ -1,6 +1,6 @@
 package com.lbg.classes;
 
-public enum CarSpeedUnit {
+public enum SpeedUnit {
     MPH,
     KPH,
     MPS,
