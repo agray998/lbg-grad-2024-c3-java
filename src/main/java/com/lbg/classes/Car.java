@@ -1,11 +1,13 @@
 package com.lbg.classes;
 import java.lang.Math;
+import java.util.Objects;
 
 public class Car extends Vehicle {
     public Car(CarModel model, CarMake make, CarColour colour) {
-        this.model = model;
-        this.make = make;
-        this.colour = colour;
+        this.setModel(model);
+        this.setMake(make);
+        this.setColour(colour);
+        this.setNumWheels((byte) 4);
     }
     public Car(CarModel model, CarMake make) {
         this(model, make, CarColour.BLACK);
@@ -52,7 +54,7 @@ public class Car extends Vehicle {
     }
 
     public void setMake(CarMake make) {
-        if (this.getMake().equals(CarMake.UNKNOWN)) {
+        if (Objects.isNull(this.getMake()) || this.getMake().equals(CarMake.UNKNOWN)) {
             this.make = make;
         }
     }
@@ -70,7 +72,7 @@ public class Car extends Vehicle {
     }
 
     public void setModel(CarModel model) {
-        if (this.getModel().equals(CarModel.UNKNOWN)) {
+        if (Objects.isNull(this.getModel()) || this.getModel().equals(CarModel.UNKNOWN)) {
             this.model = model;
         }
     }
